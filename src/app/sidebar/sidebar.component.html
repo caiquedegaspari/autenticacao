@@ -1,0 +1,28 @@
+
+    <mat-drawer-container class="example-container" autosize>
+        <mat-drawer #drawer class="example-sidenav" mode="over">
+          <button mat-icon-button>
+            <mat-icon>home</mat-icon>
+          </button><br>
+          <button mat-icon-button>
+            <mat-icon>chat</mat-icon>
+          </button><br>
+          <button mat-icon-button>
+            <mat-icon>people</mat-icon>
+          </button><br>
+          <button mat-icon-button>
+            <mat-icon>settings</mat-icon>
+          </button><br>
+          <button mat-icon-button>
+            <mat-icon>help</mat-icon> 
+          </button>
+        </mat-drawer>
+      
+        <div class="example-sidenav-content">
+          <button type="button" mat-button (click)="drawer.toggle()">
+            Toggle sidenav
+          </button>
+        </div>
+      
+      </mat-drawer-container>  
+

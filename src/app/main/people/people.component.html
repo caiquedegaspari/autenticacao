@@ -1,0 +1,13 @@
+<h1>People</h1>
+
+<div *ngIf="(people$ | async);else noperson">
+    <ul>
+        <li *ngFor="let p of (people$ | async)">{{p.name}} - email:{{p.email}}</li>
+    </ul>
+</div>
+
+<ng-template #noperson>
+    <p>
+        No person found
+    </p>
+</ng-template>
